@@ -1,0 +1,361 @@
+/* Fondos */
+/* Textos */
+/* 
+In interface mockups, use text size to determine when to use SF Pro Text and Display.
+If you use the Text and Display discrete optical sizes in an interface mockup, you need to use different variants at different text sizes.
+Specifically, use SF Pro Text for text 19 points or smaller, and SF Pro Display for text 20 points or larger.
+If you need to adjust tracking, see the tracking values available in Apple Design Resources.
+*/
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./fonts/Display/SF-Pro-Display-Black.otf") format("opentype");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./fonts/Display/SF-Pro-Display-Heavy.otf") format("opentype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./fonts/Display/SF-Pro-Display-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./fonts/Display/SF-Pro-Display-Semibold.otf") format("opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./fonts/Display/SF-Pro-Display-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./fonts/Display/SF-Pro-Display-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./fonts/Display/SF-Pro-Display-Light.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./fonts/Display/SF-Pro-Display-Thin.otf") format("opentype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("./fonts/Display/SF-Pro-Display-Ultralight.otf") format("opentype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./fonts/Text/SF-Pro-Text-Black.otf") format("opentype");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./fonts/Text/SF-Pro-Text-Heavy.otf") format("opentype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./fonts/Text/SF-Pro-Text-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./fonts/Text/SF-Pro-Text-Semibold.otf") format("opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./fonts/Text/SF-Pro-Text-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./fonts/Text/SF-Pro-Text-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./fonts/Text/SF-Pro-Text-Light.otf") format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./fonts/Text/SF-Pro-Text-Thin.otf") format("opentype");
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "SF Pro Text";
+  src: url("./fonts/Text/SF-Pro-Text-Ultralight.otf") format("opentype");
+  font-weight: 100;
+}
+
+/* Fuentes */
+body {
+  color: #1d1d1f;
+  margin: 0;
+  font-family: "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.headline {
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 0.004em;
+  line-height: 2.25rem;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 426px) {
+  .headline {
+    font-size: 3rem;
+    font-weight: 600;
+    letter-spacing: 0.014rem;
+    line-height: 3.25rem;
+    text-align: center;
+    margin-top: 6rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .headline {
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: -0.036rem;
+    line-height: 4.25rem;
+    text-align: center;
+    margin-top: 7rem;
+  }
+}
+
+.subtitle {
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  letter-spacing: -0.036rem;
+  line-height: 1rem;
+  text-align: center;
+  margin-top: 0.7rem;
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 426px) {
+  .subtitle {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: -0.036rem;
+    line-height: 1.8rem;
+    text-align: center;
+    margin-top: 0.7rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .subtitle {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.014rem;
+    line-height: 2.25rem;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+}
+
+.sectionIntro {
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: -0.036rem;
+  line-height: 1.25rem;
+  text-align: center;
+  max-width: 12rem;
+  margin: 1rem auto 0;
+  color: #1d1d1f;
+}
+
+@media only screen and (min-width: 426px) {
+  .sectionIntro {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: -0.014rem;
+    line-height: 1.3rem;
+    text-align: center;
+    max-width: 30rem;
+    margin: 0.5rem auto 0;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .sectionIntro {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.063rem;
+    font-weight: 400;
+    letter-spacing: 0.014rem;
+    line-height: 1.1rem;
+    text-align: center;
+    max-width: 50rem;
+    margin: 0.5rem auto 0;
+  }
+}
+
+.sectionIntroLight {
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: -0.036rem;
+  line-height: 1.25rem;
+  text-align: center;
+  max-width: 12rem;
+  margin: 1rem auto 0;
+  color: #86868b;
+}
+
+@media only screen and (min-width: 426px) {
+  .sectionIntroLight {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: -0.014rem;
+    line-height: 1.3rem;
+    text-align: center;
+    max-width: 30rem;
+    margin: 0.5rem auto 0;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .sectionIntroLight {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.063rem;
+    font-weight: 400;
+    letter-spacing: 0.014rem;
+    line-height: 1.1rem;
+    text-align: center;
+    max-width: 50rem;
+    margin: 0.5rem auto 0;
+  }
+}
+
+.link {
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: -0.036rem;
+  line-height: 1.25rem;
+  text-align: center;
+  max-width: 12rem;
+  margin: 1rem auto 0;
+  color: #0070c9;
+}
+
+@media only screen and (min-width: 426px) {
+  .link {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: -0.014rem;
+    line-height: 1.3rem;
+    text-align: center;
+    max-width: 30rem;
+    margin: 0.5rem auto 0;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .link {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.063rem;
+    font-weight: 400;
+    letter-spacing: 0.014rem;
+    line-height: 1.1rem;
+    text-align: center;
+    max-width: 50rem;
+    margin: 0.5rem auto 0;
+  }
+}
+
+.bodyText {
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: -0.014rem;
+  line-height: 1.25rem;
+  text-align: left;
+}
+
+/* Fuentes */
+.sectionContainer {
+  margin: 0.5rem 0.5rem;
+  padding: 0 0;
+}
+
+@media only screen and (min-width: 426px) {
+  .sectionContainer {
+    margin: 0.875rem 0.875rem;
+    padding: 0 0;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .sectionContainer {
+    margin: 1rem 1rem;
+    padding: 0 0;
+  }
+}
+
+/* Section background colors */
+.sectionGray {
+  background-color: #f5f5f7;
+}
+
+.sectionRose {
+  background-color: #fdf6f0;
+}
+
+/* Card container */
+.card {
+  margin: 1.5rem 0.5rem;
+  padding: 3rem 3rem;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+
+body {
+  background-color: #fafafa;
+}
+/*# sourceMappingURL=main.css.map */

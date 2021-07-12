@@ -1,0 +1,17 @@
+@mixin SectionContainer(
+  $marginLR: 0,
+  $marginTB: 0,
+  $paddingLR: 0,
+  $paddingTB: 0
+) {
+  margin: $marginTB $marginLR;
+  padding: $paddingTB $paddingLR;
+}
+
+@mixin CardRadius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+}

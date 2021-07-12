@@ -1,0 +1,51 @@
+/* 
+In interface mockups, use text size to determine when to use SF Pro Text and Display.
+If you use the Text and Display discrete optical sizes in an interface mockup, you need to use different variants at different text sizes.
+Specifically, use SF Pro Text for text 19 points or smaller, and SF Pro Display for text 20 points or larger.
+If you need to adjust tracking, see the tracking values available in Apple Design Resources.
+*/
+
+@import "./fonts/display";
+@import "./fonts/text";
+@import "./mixins/font-mixins";
+
+body {
+  color: $text-dark;
+  margin: 0;
+  font-family: "SF Pro Text", "SF Pro Display", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.headline {
+  @include Headline;
+}
+
+.subtitle {
+  @include Subtitle;
+}
+
+.sectionIntro {
+  @include SectionIntro;
+  color: $text-dark;
+}
+
+.sectionIntroLight {
+  @include SectionIntro;
+  color: $text-gray;
+}
+
+.link {
+  @include Link;
+}
+
+.bodyText {
+  @include Body;
+}
