@@ -1,11 +1,15 @@
 import React from "react";
-import { Link, LinkInline } from "../components/UI-Kit/Link";
+import { Link, LinkInline } from "../components/UI-Kit/Links";
 import {
   Headline,
   Subtitle,
   TextIntro,
   TextIntroLight,
 } from "../components/UI-Kit/Texts";
+import { Image } from "../components/UI-Kit/Image";
+
+/* Assets */
+import Sensor from "../components/UI-Kit/assets/images/Sensor.png";
 
 interface Props {}
 
@@ -16,8 +20,11 @@ export const Mainpage = (props: Props) => {
       <Subtitle text="Subtitle" />
       <TextIntro text="TextIntro" />
       <TextIntroLight text="TextIntroLight" />
-      <Link text="This link" url="http://localhost:3000" />
-      <LinkInline text="Another link" url="http://localhost:3000" />
+      <div className="link-container">
+        <Link text="This link" url="http://localhost:3000" />
+        <LinkInline text="Another link" url="http://localhost:3000" />
+      </div>
+      <Image src={Sensor} alt="Sensor" />
     </div>
   );
 };

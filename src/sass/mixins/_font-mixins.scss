@@ -63,12 +63,12 @@
 
 @mixin SectionIntro {
   @include Text;
-  @include TextConfig(0.875rem, 400, -0.036rem, 1.25rem, center);
+  @include TextConfig(0.875rem, 400, -0.036rem, 0.875rem, center);
   max-width: 12rem;
   margin: 0.7rem auto 0;
 
   @include tablet {
-    @include TextConfig(1rem, 400, -0.014rem, 1.3rem, center);
+    @include TextConfig(1rem, 400, -0.014rem, 1.1rem, center);
     max-width: 30rem;
     margin: 0.5rem auto 0;
   }

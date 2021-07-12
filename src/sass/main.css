@@ -200,7 +200,7 @@ code {
   font-size: 0.875rem;
   font-weight: 400;
   letter-spacing: -0.036rem;
-  line-height: 1.25rem;
+  line-height: 0.875rem;
   text-align: center;
   max-width: 12rem;
   margin: 0.7rem auto 0;
@@ -212,7 +212,7 @@ code {
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: -0.014rem;
-    line-height: 1.3rem;
+    line-height: 1.1rem;
     text-align: center;
     max-width: 30rem;
     margin: 0.5rem auto 0;
@@ -237,7 +237,7 @@ code {
   font-size: 0.875rem;
   font-weight: 400;
   letter-spacing: -0.036rem;
-  line-height: 1.25rem;
+  line-height: 0.875rem;
   text-align: center;
   max-width: 12rem;
   margin: 0.7rem auto 0;
@@ -249,7 +249,7 @@ code {
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: -0.014rem;
-    line-height: 1.3rem;
+    line-height: 1.1rem;
     text-align: center;
     max-width: 30rem;
     margin: 0.5rem auto 0;
@@ -469,6 +469,17 @@ a:active {
   }
 }
 
+.link-container {
+  text-align: center;
+  margin-top: 0.6rem;
+}
+
+@media only screen and (min-width: 426px) {
+  .link-container {
+    margin-top: 1rem;
+  }
+}
+
 .bodyText {
   font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0.875rem;
@@ -479,6 +490,13 @@ a:active {
 }
 
 /* Fuentes */
+.centerImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 .sectionContainer {
   margin: 0.5rem 0.5rem;
   padding: 0 0;

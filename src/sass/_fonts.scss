@@ -80,6 +80,15 @@ a {
   @include SVGicon;
 }
 
+.link-container {
+  text-align: center;
+  margin-top: 0.6rem;
+
+  @include tablet {
+    margin-top: 1rem;
+  }
+}
+
 .bodyText {
   @include Body;
 }

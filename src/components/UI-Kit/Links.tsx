@@ -8,8 +8,8 @@ interface Props {
 
 export const Link = (props: Props) => {
   return (
-    <span>
-      <a className="link" href={props.url}>
+    <span className="link">
+      <a href={props.url}>
         {props.text}
         <img className="svgIcon" src={LinkArrow} alt="" />
       </a>
