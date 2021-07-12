@@ -1,12 +1,13 @@
 import React from "react";
-import { Link, LinkInline } from "../components/UI-Kit/Links";
+
+import { Link, LinkInline } from "../components/UI-Kit/Utils/Links";
 import {
   Headline,
   Subtitle,
   TextIntro,
   TextIntroLight,
-} from "../components/UI-Kit/Texts";
-import { Image } from "../components/UI-Kit/Image";
+} from "../components/UI-Kit/Utils/Texts";
+import { Image } from "../components/UI-Kit/Utils/Image";
 
 /* Assets */
 import Sensor from "../components/UI-Kit/assets/images/Sensor.png";

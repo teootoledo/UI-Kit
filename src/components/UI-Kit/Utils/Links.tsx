@@ -1,5 +1,5 @@
 import React from "react";
-import LinkArrow from "./assets/icons/ChevronRightSB.svg";
+import LinkArrow from "../assets/icons/ChevronRightSB.svg";
 
 interface Props {
   text: string;
