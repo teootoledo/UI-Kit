@@ -10,6 +10,18 @@
   }
 }
 
+/* Navbar Container */
+
+.navbarContainer {
+  width: 100%;
+  height: 3rem;
+  background-color: $background-nav;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem calc((100vw - 1000px) / 2);
+  z-index: 100;
+}
+
 /* Section background colors */
 
 .sectionGray {
