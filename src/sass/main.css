@@ -536,10 +536,20 @@ a:active {
   color: #86868b;
 }
 
+.navlink:visited {
+  color: #1d1d1f;
+}
+
+.navlink:focus {
+  color: #1d1d1f;
+}
+
+.navlink:hover {
+  color: #1d1d1f;
+}
+
 .navmenu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -548,7 +558,9 @@ a:active {
 
 @media only screen and (min-width: 426px) {
   .navmenu {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 

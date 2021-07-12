@@ -30,15 +30,27 @@
   &:active {
     color: $text-gray;
   }
+
+  &:visited {
+    color: $text-dark;
+  }
+
+  &:focus {
+    color: $text-dark;
+  }
+
+  &:hover {
+    color: $text-dark;
+  }
 }
 
 .navmenu {
-  display: flex;
+  display: none;
   align-items: center;
   margin-right: -24px;
 
   @include tablet {
-    display: none;
+    display: flex;
   }
 }
 
