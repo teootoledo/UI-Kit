@@ -42,8 +42,42 @@ code {
   color: $text-gray;
 }
 
+a {
+  color: $text-link;
+  text-decoration: none;
+  &:visited {
+    color: $text-link;
+  }
+  &:hover {
+    color: $text-link;
+  }
+  &:active {
+    color: $text-link;
+  }
+}
+
 .link {
   @include Link;
+
+  &:visited {
+    @include Link;
+  }
+
+  &:hover {
+    @include Link;
+  }
+
+  &:active {
+    @include Link;
+  }
+}
+
+.secondLink {
+  margin-left: 1.5rem;
+}
+
+.svgIcon {
+  @include SVGicon;
 }
 
 .bodyText {

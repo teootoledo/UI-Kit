@@ -167,7 +167,7 @@ code {
   letter-spacing: -0.036rem;
   line-height: 1rem;
   text-align: center;
-  margin-top: 0.7rem;
+  margin-top: 0.6rem;
   margin-bottom: 0;
 }
 
@@ -203,7 +203,7 @@ code {
   line-height: 1.25rem;
   text-align: center;
   max-width: 12rem;
-  margin: 1rem auto 0;
+  margin: 0.7rem auto 0;
   color: #1d1d1f;
 }
 
@@ -240,7 +240,7 @@ code {
   line-height: 1.25rem;
   text-align: center;
   max-width: 12rem;
-  margin: 1rem auto 0;
+  margin: 0.7rem auto 0;
   color: #86868b;
 }
 
@@ -269,9 +269,27 @@ code {
   }
 }
 
+a {
+  color: #0070c9;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #0070c9;
+}
+
+a:hover {
+  color: #0070c9;
+}
+
+a:active {
+  color: #0070c9;
+}
+
 .link {
+  text-decoration: none;
   font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 400;
   letter-spacing: -0.036rem;
   line-height: 1.25rem;
@@ -283,7 +301,7 @@ code {
 
 @media only screen and (min-width: 426px) {
   .link {
-    font-size: 1rem;
+    font-size: 1.125rem;
     font-weight: 400;
     letter-spacing: -0.014rem;
     line-height: 1.3rem;
@@ -296,13 +314,158 @@ code {
 @media only screen and (min-width: 1025px) {
   .link {
     font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.063rem;
+    font-size: 1.313rem;
     font-weight: 400;
     letter-spacing: 0.014rem;
     line-height: 1.1rem;
     text-align: center;
     max-width: 50rem;
     margin: 0.5rem auto 0;
+  }
+}
+
+.link:visited {
+  text-decoration: none;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.036rem;
+  line-height: 1.25rem;
+  text-align: center;
+  max-width: 12rem;
+  margin: 1rem auto 0;
+  color: #0070c9;
+}
+
+@media only screen and (min-width: 426px) {
+  .link:visited {
+    font-size: 1.125rem;
+    font-weight: 400;
+    letter-spacing: -0.014rem;
+    line-height: 1.3rem;
+    text-align: center;
+    max-width: 30rem;
+    margin: 0.5rem auto 0;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .link:visited {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.313rem;
+    font-weight: 400;
+    letter-spacing: 0.014rem;
+    line-height: 1.1rem;
+    text-align: center;
+    max-width: 50rem;
+    margin: 0.5rem auto 0;
+  }
+}
+
+.link:hover {
+  text-decoration: none;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.036rem;
+  line-height: 1.25rem;
+  text-align: center;
+  max-width: 12rem;
+  margin: 1rem auto 0;
+  color: #0070c9;
+}
+
+@media only screen and (min-width: 426px) {
+  .link:hover {
+    font-size: 1.125rem;
+    font-weight: 400;
+    letter-spacing: -0.014rem;
+    line-height: 1.3rem;
+    text-align: center;
+    max-width: 30rem;
+    margin: 0.5rem auto 0;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .link:hover {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.313rem;
+    font-weight: 400;
+    letter-spacing: 0.014rem;
+    line-height: 1.1rem;
+    text-align: center;
+    max-width: 50rem;
+    margin: 0.5rem auto 0;
+  }
+}
+
+.link:active {
+  text-decoration: none;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: -0.036rem;
+  line-height: 1.25rem;
+  text-align: center;
+  max-width: 12rem;
+  margin: 1rem auto 0;
+  color: #0070c9;
+}
+
+@media only screen and (min-width: 426px) {
+  .link:active {
+    font-size: 1.125rem;
+    font-weight: 400;
+    letter-spacing: -0.014rem;
+    line-height: 1.3rem;
+    text-align: center;
+    max-width: 30rem;
+    margin: 0.5rem auto 0;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .link:active {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.313rem;
+    font-weight: 400;
+    letter-spacing: 0.014rem;
+    line-height: 1.1rem;
+    text-align: center;
+    max-width: 50rem;
+    margin: 0.5rem auto 0;
+  }
+}
+
+.secondLink {
+  margin-left: 1.5rem;
+}
+
+.svgIcon {
+  text-align: center;
+  height: 0.5rem;
+  width: auto;
+  color: #0070c9;
+  padding: 0.1rem;
+  margin-left: 0.1rem;
+}
+
+@media only screen and (min-width: 426px) {
+  .svgIcon {
+    height: 0.6rem;
+    width: auto;
+    color: #0070c9;
+    margin-left: 0.15rem;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .svgIcon {
+    height: 0.7rem;
+    width: auto;
+    color: #0070c9;
+    margin-left: 0.2rem;
   }
 }
 

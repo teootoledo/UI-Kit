@@ -9,6 +9,12 @@
   text-align: $align;
 }
 
+@mixin SVGConfig($height, $width, $color) {
+  height: $height;
+  width: $width;
+  color: $color;
+}
+
 @mixin Display {
   font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica,
     Arial, sans-serif;
@@ -39,7 +45,7 @@
 @mixin Subtitle {
   @include Text;
   @include TextConfig(1.15rem, 400, -0.036rem, 1rem, center);
-  margin-top: 0.7rem;
+  margin-top: 0.6rem;
   margin-bottom: 0;
 
   @include tablet {
@@ -59,7 +65,7 @@
   @include Text;
   @include TextConfig(0.875rem, 400, -0.036rem, 1.25rem, center);
   max-width: 12rem;
-  margin: 1rem auto 0;
+  margin: 0.7rem auto 0;
 
   @include tablet {
     @include TextConfig(1rem, 400, -0.014rem, 1.3rem, center);
@@ -76,23 +82,41 @@
 }
 
 @mixin Link {
+  text-decoration: none;
   @include Text;
-  @include TextConfig(0.875rem, 400, -0.036rem, 1.25rem, center);
+  @include TextConfig(1rem, 400, -0.036rem, 1.25rem, center);
   max-width: 12rem;
   margin: 1rem auto 0;
   color: $text-link;
 
   @include tablet {
-    @include TextConfig(1rem, 400, -0.014rem, 1.3rem, center);
+    @include TextConfig(1.125rem, 400, -0.014rem, 1.3rem, center);
     max-width: 30rem;
     margin: 0.5rem auto 0;
   }
 
   @include desktop {
     @include Display;
-    @include TextConfig(1.063rem, 400, 0.014rem, 1.1rem, center);
+    @include TextConfig(1.313rem, 400, 0.014rem, 1.1rem, center);
     max-width: 50rem;
     margin: 0.5rem auto 0;
+  }
+}
+
+@mixin SVGicon {
+  text-align: center;
+  @include SVGConfig(0.5rem, auto, $text-link);
+  padding: 0.1rem;
+  margin-left: 0.1rem;
+
+  @include tablet {
+    @include SVGConfig(0.6rem, auto, $text-link);
+    margin-left: 0.15rem;
+  }
+
+  @include desktop {
+    @include SVGConfig(0.7rem, auto, $text-link);
+    margin-left: 0.2rem;
   }
 }
 
