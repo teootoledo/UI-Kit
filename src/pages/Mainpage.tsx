@@ -8,6 +8,7 @@ import {
   TextIntroLight,
 } from "../components/UI-Kit/Utils/Texts";
 import { Image } from "../components/UI-Kit/Utils/Image";
+import { Video } from "../components/UI-Kit/Utils/Video";
 
 /* Assets */
 import Sensor from "../components/UI-Kit/assets/images/Sensor.png";
@@ -25,7 +26,8 @@ export const Mainpage = (props: Props) => {
         <Link text="This link" url="http://localhost:3000" />
         <LinkInline text="Another link" url="http://localhost:3000" />
       </div>
-      <Image src={Sensor} alt="Sensor" />
+      {/* <Image src={Sensor} alt="Sensor" /> */}
+      <Video />
     </div>
   );
 };

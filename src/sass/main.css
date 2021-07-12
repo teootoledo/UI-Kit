@@ -490,6 +490,15 @@ a:active {
 }
 
 /* Fuentes */
+.video {
+  width: 20rem;
+  height: auto;
+}
+
+.videoContainer {
+  margin: 2rem auto;
+}
+
 .centerImage {
   display: block;
   margin-left: auto;
