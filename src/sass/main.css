@@ -551,6 +551,28 @@ a:active {
   }
 }
 
+.closeIcon {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 2.5rem;
+  width: 0.9rem;
+  height: auto;
+  padding: 0.3rem;
+  cursor: pointer;
+  transform: translate(-100%, 45%);
+  -webkit-transform: translate(-100%, 45%);
+  -moz-transform: translate(-100%, 45%);
+  -ms-transform: translate(-100%, 45%);
+  -o-transform: translate(-100%, 45%);
+}
+
+@media only screen and (min-width: 1025px) {
+  .closeIcon {
+    display: none;
+  }
+}
+
 .navlink {
   color: #1d1d1f;
   display: -webkit-box;

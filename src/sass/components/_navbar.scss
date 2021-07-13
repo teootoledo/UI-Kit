@@ -34,6 +34,25 @@
   -o-transform: translate(-100%, 75%);
 }
 
+.closeIcon {
+  @include desktop {
+    display: none;
+  }
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 2.5rem;
+  width: 0.9rem;
+  height: auto;
+  padding: 0.3rem;
+  cursor: pointer;
+  transform: translate(-100%, 45%);
+  -webkit-transform: translate(-100%, 45%);
+  -moz-transform: translate(-100%, 45%);
+  -ms-transform: translate(-100%, 45%);
+  -o-transform: translate(-100%, 45%);
+}
+
 .navlink {
   color: $text-dark;
   display: flex;
