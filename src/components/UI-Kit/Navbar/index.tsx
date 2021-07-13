@@ -11,9 +11,11 @@ const Navbar = (props: Props) => {
   return (
     <nav className="navbarContainer">
       <Link to="/">
-        <img src={NavIcon} alt="NavIcon" />
+        <img src={NavIcon} alt="NavIcon" className="navIcon" />
       </Link>
-      <img src={Bars} alt="Menu" className="menuIcon" />
+      <div className="iconWrap">
+        <img src={Bars} alt="Menu" className="menuIcon" />
+      </div>
       <div className="navmenu">
         <Link className="navlink" to="/home">
           Home
@@ -28,11 +30,13 @@ const Navbar = (props: Props) => {
           Contacto
         </Link>
         <Link className="navlink" to="/sign-up">
-          Sign Up
+          Registrarse
         </Link>
       </div>
       <nav>
-        <Link to="/signin">Sign In</Link>
+        <Link to="/signin" className="navbtnlink">
+          Iniciar sesión
+        </Link>
       </nav>
     </nav>
   );
