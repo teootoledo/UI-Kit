@@ -17,7 +17,7 @@ const Navbar = (props: Props) => {
         <img src={Bars} alt="Menu" className="menuIcon" />
       </div>
       <div className="navmenu">
-        <Link className="navlink" to="/home">
+        <Link className="navlink" to="/">
           Home
         </Link>
         <Link className="navlink" to="/about">

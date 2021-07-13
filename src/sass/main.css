@@ -442,6 +442,10 @@ a:active {
   margin-left: 1.5rem;
 }
 
+.secondLink:hover {
+  margin-left: 1.5rem;
+}
+
 .svgIcon {
   text-align: center;
   height: 0.5rem;
