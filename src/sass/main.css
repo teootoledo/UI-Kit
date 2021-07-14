@@ -116,7 +116,7 @@ If you need to adjust tracking, see the tracking values available in Apple Desig
 
 /* Fuentes */
 body {
-  color: #1d1d1f;
+  color: #444444;
   margin: 0;
   font-family: "SF Pro Text", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -204,7 +204,7 @@ code {
   text-align: center;
   max-width: 12rem;
   margin: 0.7rem auto 0;
-  color: #1d1d1f;
+  color: #444444;
 }
 
 @media only screen and (min-width: 426px) {
@@ -573,17 +573,39 @@ a:active {
   }
 }
 
+.mobileSeparator {
+  border: none;
+  height: 1px;
+  color: #d7d7d7;
+  background-color: #d7d7d7;
+  width: 90vw;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+@media only screen and (min-width: 1025px) {
+  .mobileSeparator {
+    display: none;
+  }
+}
+
 .navlink {
-  color: #1d1d1f;
+  color: #444444;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   text-decoration: none;
-  padding: 0 1rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  height: 100%;
   cursor: pointer;
+  padding: 0.3rem 2rem;
+}
+
+@media only screen and (min-width: 1025px) {
+  .navlink {
+    padding: 0 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    height: 100%;
+  }
 }
 
 .navlink:active {
@@ -591,18 +613,19 @@ a:active {
 }
 
 .navlink:visited {
-  color: #1d1d1f;
+  color: #444444;
 }
 
 .navlink:focus {
-  color: #1d1d1f;
+  color: #444444;
 }
 
 .navlink:hover {
-  color: #1d1d1f;
+  color: #444444;
 }
 
 .navmenu {
+  /* MOBILE */
   font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.063rem;
   font-weight: 400;
@@ -619,13 +642,25 @@ a:active {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  z-index: 99;
   position: absolute;
-  width: 100%;
+  top: -120%;
+  background-color: #fafafa;
+  margin-top: 2.5rem;
+  padding: 3rem 0 1rem 0rem;
   height: 100%;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  opacity: 0;
 }
 
 @media only screen and (min-width: 1025px) {
   .navmenu {
+    /* DESKTOP */
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 0.875rem;
     font-weight: 400;
@@ -633,9 +668,11 @@ a:active {
     line-height: 2rem;
     text-align: left;
     position: relative;
+    padding: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    top: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -646,6 +683,7 @@ a:active {
         -ms-flex-align: center;
             align-items: center;
     margin: 0;
+    opacity: 1;
   }
 }
 
@@ -659,10 +697,20 @@ a:active {
   margin-right: 1.5rem;
 }
 
-@media only screen and (min-width: 426px) {
+@media only screen and (min-width: 1025px) {
   .navbtn {
     display: none;
   }
+}
+
+.active {
+  top: 0;
+  transition: all 0.7s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -ms-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  opacity: 1;
 }
 
 .navbtnlink {
@@ -728,6 +776,10 @@ a:active {
           justify-content: space-between;
   padding: 0.5rem calc((100vw - 1000px) / 2);
   z-index: 100;
+}
+
+.mobile {
+  background-color: #fafafa;
 }
 
 /* Section background colors */

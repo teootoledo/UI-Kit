@@ -11,11 +11,11 @@ import Close from "../assets/icons/CloseIcon.svg";
 interface Props {}
 
 const Navbar = (props: Props) => {
-  const [state, setState] = useState(true);
+  const [state, setState] = useState(false);
 
   return (
     /* NAVBAR DESKTOP */
-    <nav className="navbarContainer">
+    <nav className={state ? "navbarContainer mobile" : "navbarContainer"}>
       <Link to="/">
         <img src={NavIcon} alt="NavIcon" className="navIcon" />
       </Link>
@@ -35,9 +35,21 @@ const Navbar = (props: Props) => {
       <div className={state ? "navmenu active" : "navmenu"}>
         {navbarElements.map((element, index) => {
           return (
-            <Link className={element.className} to={element.to} key={index}>
-              {element.label}
-            </Link>
+            <>
+              <Link
+                className={element.className}
+                to={element.to}
+                key={index}
+                onClick={(event: React.MouseEvent<HTMLElement>) => {
+                  if (state) {
+                    setState(!state);
+                  }
+                }}
+              >
+                {element.label}
+              </Link>
+              <hr className="mobileSeparator"></hr>
+            </>
           );
         })}
       </div>
