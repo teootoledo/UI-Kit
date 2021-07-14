@@ -26,9 +26,9 @@ const Navbar = (props: Props) => {
         }}
       >
         <img
-          src={state ? Bars : Close}
+          src={state ? Close : Bars}
           alt="Menu"
-          className={state ? "menuIcon" : "closeIcon"}
+          className={state ? "closeIcon" : "menuIcon"}
         />
       </div>
       {/* NAVBAR ITEMS IMPORTED FROM NAVBARELEMENTS.TS */}
