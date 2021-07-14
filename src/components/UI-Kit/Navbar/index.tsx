@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { NavLink as Link } from "react-router-dom";
 
+import { navbarElements } from "./navbarElements";
+
 import NavIcon from "../assets/icons/NavIcon.svg";
 
 import Bars from "../assets/icons/Bars.svg";
@@ -12,6 +14,7 @@ const Navbar = (props: Props) => {
   const [state, setState] = useState(true);
 
   return (
+    /* NAVBAR DESKTOP */
     <nav className="navbarContainer">
       <Link to="/">
         <img src={NavIcon} alt="NavIcon" className="navIcon" />
@@ -28,23 +31,21 @@ const Navbar = (props: Props) => {
           className={state ? "menuIcon" : "closeIcon"}
         />
       </div>
-      <div className="navmenu">
-        <Link className="navlink" to="/">
-          Home
-        </Link>
-        <Link className="navlink" to="/about">
-          Acerca de
-        </Link>
-        <Link className="navlink" to="/services">
-          Servicios
-        </Link>
-        <Link className="navlink" to="/contact-us">
-          Contacto
-        </Link>
-        <Link className="navlink" to="/sign-up">
-          Registrarse
-        </Link>
+      {/* NAVBAR ITEMS IMPORTED FROM NAVBARELEMENTS.TS */}
+      <div className={state ? "navmenu active" : "navmenu"}>
+        {navbarElements.map((element, index) => {
+          return (
+            <Link className={element.className} to={element.to} key={index}>
+              {element.label}
+            </Link>
+          );
+        })}
       </div>
+
+      {/* MOBILE MENU */}
+      <nav></nav>
+
+      {/* ONLY APPEARS IN DESKTOP */}
       <nav>
         <Link to="/signin" className="navbtnlink">
           Iniciar sesión
@@ -55,32 +56,3 @@ const Navbar = (props: Props) => {
 };
 
 export default Navbar;
-/* 
-export const MobileIcon = () => {
-  const [state, setState] = useState(true);
-
-  if (state) {
-    return (
-      <img
-        src={Bars}
-        alt="Menu"
-        className="menuIcon"
-        onClick={(event: React.MouseEvent<HTMLElement>) => {
-          setState(!state);
-        }}
-      />
-    );
-  } else {
-    return (
-      <img
-        src={Close}
-        alt="Close"
-        className="menuIcon"
-        onClick={(event: React.MouseEvent<HTMLElement>) => {
-          setState(!state);
-        }}
-      />
-    );
-  }
-};
- */

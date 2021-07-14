@@ -604,23 +604,48 @@ a:active {
 
 .navmenu {
   font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.875rem;
+  font-size: 1.063rem;
   font-weight: 400;
   letter-spacing: normal;
-  line-height: 2rem;
+  line-height: 1.313rem;
   text-align: left;
-  display: none;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 @media only screen and (min-width: 1025px) {
   .navmenu {
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: normal;
+    line-height: 2rem;
+    text-align: left;
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: auto;
+    background: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0;
   }
 }
 
@@ -631,7 +656,7 @@ a:active {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: 24px;
+  margin-right: 1.5rem;
 }
 
 @media only screen and (min-width: 426px) {

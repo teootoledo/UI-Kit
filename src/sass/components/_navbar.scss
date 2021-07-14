@@ -82,20 +82,34 @@
 
 .navmenu {
   @include Text;
-  @include TextConfig(0.875rem, 400, normal, 2rem, left);
-  display: none;
-  align-items: center;
-  margin-right: 0;
+  @include TextConfig(1.063rem, 400, normal, 1.313rem, left);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 
   @include desktop {
+    @include Text;
+    @include TextConfig(0.875rem, 400, normal, 2rem, left);
+    position: relative;
     display: flex;
+    flex-direction: row;
+    width: auto;
+    background: none;
+    align-items: center;
+    margin: 0;
   }
+}
+
+.active {
 }
 
 .navbtn {
   display: flex;
   align-items: center;
-  margin-right: 24px;
+  margin-right: 1.5rem;
 
   @include tablet {
     display: none;
